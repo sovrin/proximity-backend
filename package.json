@@ -1,0 +1,36 @@
+{
+  "name": "@sovrin/proximity-backend",
+  "version": "1.0.0",
+  "description": "remote debug logging",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -cw",
+    "test": "tape -r esm tests/**/*.js",
+    "dev": "ts-node src/index.ts",
+    "start": "react-scripts start"
+  },
+  "files": [
+    "lib"
+  ],
+  "types": "lib/types/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sovrin/proximity-backend.git"
+  },
+  "author": {
+    "name": "Oleg Kamlowski",
+    "email": "oleg.kamlowski@thomann.de"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sovrin/proximity-backend/issues"
+  },
+  "homepage": "https://github.com/sovrin/proximity-backend#readme",
+  "devDependencies": {
+    "@types/node": "^12.11.7",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.4",
+    "ws": "latest"
+  }
+}
